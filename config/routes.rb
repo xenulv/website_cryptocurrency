@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-  get '/home/docs'
+  devise_for :users
+  post '/home/lookup' => 'home/lookup'
+  get '/home/lookup'
   get '/home/about'
   root 'home#index'
 
