@@ -30,4 +30,8 @@ class HomeController < ApplicationController
     end
   end
 
+  def users
+
+  end
+
 end
